@@ -8,14 +8,14 @@ int vect[1000000];
 void main () {
   i=0;
   do {
-  printf ("Dame un valor entero que desees colocar en la matriz: \n");
+  printf ("Dame un valor entero que desees colocar en el arreglo: \n");
   scanf ("%d", &n);
   vect[i]=n;
-  printf ("Deseas colocar otro valor en la matriz? S/N \n");
+  printf ("Deseas colocar otro valor en el arreglo? S/N \n");
   scanf (" %c", &c);
   ++i;
   } while (c=='S' || c=='s');
-  printf ("Dame el numero que deseas que busquemos en la matriz: \n");
+  printf ("Dame el numero que deseas que busquemos en el arreglo: \n");
   scanf ("%d", &n);
   for (cont=0; cont<=i; cont++) {
     if (vect[cont] == n)
